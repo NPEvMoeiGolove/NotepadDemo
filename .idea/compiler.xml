@@ -2,19 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="notepad-demo" />
+        <module name="NotepadDemo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="NotepadDemo" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="NotepadDemo" options="-parameters" />
       <module name="notepad-demo" options="-parameters" />
     </option>
   </component>
