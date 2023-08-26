@@ -1,7 +1,7 @@
 package model;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
+
 import java.util.Objects;
 
 
@@ -10,6 +10,10 @@ public class Notepad {
     private LocalDateTime timeNote;
     private String label;
     private String note;
+
+    public Notepad(){
+
+    }
 
     public Notepad(long id, LocalDateTime timeNote, String label, String note) {
         this.id = id;
